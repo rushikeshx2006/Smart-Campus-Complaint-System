@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    width: 100%;
+    height: 130px;
+
+    background-color: #402494;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px 0 5px;
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+.fixit {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fix {
+    color: white;
+}
+
+.it {
+    color: #8bc34a;
+}
+
+
+/* =================================
+   HEADER RIGHT
+================================= */
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* =================================
+   NOTIFICATION
+================================= */
+
+.notification {
+    position: relative;
+
+    font-size: 45px;
+
+    cursor: pointer;
+}
+
+.notification span {
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    right: -2px;
+    top: 3px;
+}
+
+
+/* =================================
+   USER
+================================= */
+
+.user {
+    width: 315px;
+    height: 85px;
+
+    border: 2px solid #a9d8ff;
+
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 20px;
+
+    color: white;
+}
+
+
+.userIcon {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background-color: #805ce0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 34px;
+
+    margin-right: 15px;
+}
+
+
+.userDetails h2 {
+    font-size: 36px;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.userDetails p {
+    font-size: 25px;
+
+    margin-top: 3px;
+}
+
+
+/* =================================
+   MAIN
+================================= */
+
+.main {
+    width: 100%;
+
+    min-height: calc(100vh - 130px);
+
+    display: flex;
+
+    padding: 20px 65px;
+}
+
+
+/* =================================
+   LEFT SIDE
+================================= */
+
+.leftSide {
+    width: 28%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* =================================
+   PROFILE IMAGE
+================================= */
+
+.profileImage {
+    width: 230px;
+    height: 260px;
+
+    border: 3px solid black;
+
+    border-radius: 85px 85px 75px 75px;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* HEAD */
+
+.head {
+    width: 125px;
+    height: 125px;
+
+    background-color: #805ce0;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* BODY */
+
+.body {
+    width: 225px;
+    height: 120px;
+
+    background-color: #805ce0;
+
+    border-radius: 120px 120px 0 0;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+/* =================================
+   LEFT MENU
+================================= */
+
+.menu {
+    width: 230px;
+
+    border: 1px solid #555;
+
+    border-radius: 15px;
+
+    padding: 10px 7px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.menu button {
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 27px;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    border-radius: 30px;
+}
+
+
+.menu .active {
+    border: 1px solid #aaa;
+
+    background-color: #f0f4f4;
+}
+
+
+/* =================================
+   PROFILE BOX
+================================= */
+
+.profileBox {
+    width: 665px;
+    height: 675px;
+
+    border: 1px solid #555;
+
+    border-radius: 40px;
+
+    position: relative;
+
+    margin-left: 65px;
+
+    padding: 75px 40px 40px;
+}
+
+
+/* =================================
+   PROFILE TITLE
+================================= */
+
+.profileTitle {
+    position: absolute;
+
+    top: 5px;
+    right: 30px;
+
+    font-size: 27px;
+
+    display: flex;
+    gap: 8px;
+}
+
+
+/* =================================
+   INFORMATION
+================================= */
+
+.information {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+.infoRow {
+    display: flex;
+    align-items: center;
+
+    font-size: 32px;
+
+    white-space: nowrap;
+}
+
+
+.infoRow label {
+    display: inline-block;
+
+    min-width: 140px;
+}
+
+
+.infoRow span {
+    font-size: 25px;
+
+    letter-spacing: -2px;
+}
+
+
+/* =================================
+   UPDATE BUTTON
+================================= */
+
+.update {
+    position: absolute;
+
+    right: 45px;
+    bottom: 95px;
+
+    width: 280px;
+    height: 63px;
+
+    border-radius: 35px;
+
+    background-color: #4d56f4;
+
+    color: white;
+
+    border: 2px solid #333;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.update:hover {
+    background-color: #3942df;
+
+    transform: translateY(-2px);
+}

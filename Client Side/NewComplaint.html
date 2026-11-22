@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submit New Complaint</title>
+
+    <link rel="stylesheet" href="NewComplaint.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <img src="LOGO.png" class="logo">
+
+            <div class="brand-name">
+                <span class="fix">Fix</span><span class="it">It</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="tagline">
+                <h3>Smart Campus</h3>
+                <p>Complaint & Service Management System</p>
+            </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="navigation">
+
+            <a href="#">
+                <span class="nav-icon">♙</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">▣</span>
+                My Complaints
+            </a>
+
+            <a href="#">
+                <span class="nav-icon">♧</span>
+                Notifications
+                <span class="notification">3</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Profile -->
+
+        <div class="profile">
+
+            <div class="profile-image">
+                👤
+            </div>
+
+            <div class="profile-info">
+                <strong>Rushi Chaudhari</strong>
+                <small>Student</small>
+            </div>
+
+            <span class="arrow">⌄</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <section class="page-heading">
+
+            <h1>
+                <span>Submit</span> New Complaint
+            </h1>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Fill in the details below to report an issue.
+                Our team will review it and take necessary action.
+            </p>
+
+        </section>
+
+
+
+        <!-- ================= COMPLAINT FORM ================= -->
+
+        <section class="complaint-box">
+
+            <form>
+
+
+                <!-- Complaint Title -->
+
+                <div class="form-row">
+
+                    <div class="form-label">
+
+                        <div class="icon-box">✎</div>
+
+                        <label>
+                            Complaint Title <b>*</b>
+                        </label>
+
+                    </div>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Complaint Title"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Category -->
+
+                <div class="form-row">
+
+                    <div class="form-label">
+
+                        <div class="icon-box">✣</div>
+
+                        <label>
+                            Category <b>*</b>
+                        </label>
+
+                    </div>
+
+                    <select required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option>Electrical</option>
+                        <option>Cleaning</option>
+                        <option>Water Supply</option>
+                        <option>Internet</option>
+                        <option>Classroom</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Location -->
+
+                <div class="form-row">
+
+                    <div class="form-label">
+
+                        <div class="icon-box">●</div>
+
+                        <label>
+                            Location <b>*</b>
+                        </label>
+
+                    </div>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Location/Building/Room No."
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Description -->
+
+                <div class="form-row description-row">
+
+                    <div class="form-label">
+
+                        <div class="icon-box">▤</div>
+
+                        <label>
+                            Description <b>*</b>
+                        </label>
+
+                    </div>
+
+                    <textarea
+                        placeholder="Describe Your Complaint in Details...."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- Upload -->
+
+                <div class="form-row upload-row">
+
+                    <div class="form-label">
+
+                        <div class="icon-box">▧</div>
+
+                        <label>
+                            Upload Image
+                        </label>
+
+                    </div>
+
+                    <label class="upload-box">
+
+                        <input
+                            type="file"
+                            accept=".jpg,.jpeg,.png"
+                        >
+
+                        <div class="upload-icon">
+                            ☁
+                        </div>
+
+                        <div>
+                            <strong>
+                                Click to upload or drag and drop
+                            </strong>
+
+                            <span>
+                                JPG, PNG (Max. 5MB)
+                            </span>
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- Buttons -->
+
+                <div class="buttons">
+
+                    <button
+                        type="reset"
+                        class="clear-btn"
+                    >
+                        ◆ &nbsp; CLEAR
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+                        ➤ &nbsp; SUBMIT COMPLAINT
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

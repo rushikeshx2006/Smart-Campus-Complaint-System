@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    background: #eeeeff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT REGISTER CARD
+   ========================= */
+
+.LBox {
+    height: 90vh;
+    width: 40%;
+
+    margin-left: 5.7%;
+
+    background: linear-gradient(
+        110deg,
+        #8715e8,
+        #a82df0,
+        #d19aff
+    );
+
+    border: 1.5px solid black;
+
+    border-radius: 60px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logoR {
+    position: absolute;
+
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    right: -32px;
+    top: -25px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    border: 5px solid #8b5cf6;
+
+    z-index: 5;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+.LBox::before {
+    content: "👥  New USER";
+
+    color: #d5d5ff;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-top: 0px;
+    margin-bottom: 55px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   INPUT CONTAINER
+   ========================= */
+
+.inputs {
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 34px;
+}
+
+
+/* =========================
+   INPUT BOX
+   ========================= */
+
+.inputBox {
+    width: 100%;
+    height: 45px;
+
+    background: white;
+
+    border: 2px solid black;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    transition: 0.2s;
+}
+
+
+/* ICON */
+
+.inputBox span {
+    width: 30px;
+
+    font-size: 18px;
+
+    display: none;
+}
+
+
+/* INPUT */
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+
+/* INPUT FOCUS */
+
+.inputBox:focus-within {
+    box-shadow: 0 0 8px rgba(255,255,255,0.8);
+}
+
+
+/* =========================
+   REGISTER BUTTON
+   ========================= */
+
+.register {
+    width: 70%;
+    height: 48px;
+
+    margin-top: 0px;
+
+    background: #c467df;
+
+    color: white;
+
+    border: 2px solid #a22ae6;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.register:hover {
+    transform: translateY(-2px);
+
+    background: #b457d0;
+}
+
+
+/* =========================
+   FORGOT
+   HIDDEN FOR REGISTER
+   ========================= */
+
+.forgot {
+    display: none;
+}
+
+
+/* =========================
+   LOGIN BUTTON AREA
+   ========================= */
+
+.login {
+    width: 135px;
+    height: 42px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid #9b25df;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    bottom: 38px;
+    right: 16%;
+
+    transition: 0.2s;
+}
+
+.login:hover {
+    background: #a92be8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   "HAVE ACCOUNT" TEXT
+   ========================= */
+
+.LBox::after {
+    content: "Have Already Account ?";
+
+    position: absolute;
+
+    bottom: 48px;
+    left: 11%;
+
+    color: black;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   DOTTED LINE
+   ========================= */
+
+.inputs::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 94px;
+    left: 5%;
+
+    width: 90%;
+
+    border-top: 4px dotted rgba(130, 70, 230, 0.55);
+}
+
+
+/* =========================
+   RIGHT IMAGE
+   ========================= */
+
+.rightImage {
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-right: 2%;
+}
+
+
+.rightImage img {
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+}

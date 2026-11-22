@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixIt - Dashboard</title>
+
+    <link rel="stylesheet" href="Home1.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar"> 
+
+            <div class="logo-area">
+
+                <div class="logo-circle">
+                    🔧
+                </div>
+
+                <div>
+                    <h1><span>Fix</span>It</h1>
+                    <p>Smart Campus<br>Complaint System</p>
+                </div>
+
+            </div>
+                
+
+            <!-- Navigation -->
+
+            <nav class="navigation">
+
+                <a href="#dashboard" class="nav-link active">
+                    <span class="icon">⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="complaint-details.html" class="nav-link">
+                    <span class="icon">☷</span>
+                    My Complaints
+                </a>
+
+                <a href="NewComplaint.html" class="nav-link">
+                    <span class="icon">＋</span>
+                    New Complaint
+                </a>
+
+                <a href="Notificaion.html" class="nav-link">
+                    <span class="icon">♧</span>
+                    Notifications
+
+                    <span class="notification-number">3</span>
+                </a>
+
+                <a href="profile.html" class="nav-link">
+                    <span class="icon">♙</span>
+                    Profile
+                </a>
+
+                <a href="Home.html" class="nav-link logout">
+                    <span class="icon">⇥</span>
+                    Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= MAIN AREA ================= -->
+
+        <main class="main">
+
+            <!-- TOP HEADER -->
+
+            <header class="topbar">
+
+                <div class="welcome">
+
+                    <button class="menu-btn">
+                        ☰
+                    </button>
+
+                    <div>
+                        <h2>Hello, Rushi Chaudhari 👋</h2>
+
+                        <p>
+                            Welcome back! Here's what's happening with your complaints.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="top-actions">
+
+                    <a href="NewComplaint.html" class="new-btn">
+                        <span>＋</span>
+                        New Complaint
+                    </a>
+
+
+                    <a href="#notifications" class="bell">
+                        ♧
+                        <span>3</span>
+                    </a>
+
+
+                    <a href="profile.html" class="profile">
+                        👨🏻
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= CONTENT ================= -->
+
+            <section class="content" id="dashboard">
+
+
+                <!-- STAT CARDS -->
+
+                <div class="cards">
+
+
+                    <div class="card purple">
+
+                        <div class="card-icon">
+                            📋
+                        </div>
+
+                        <h3>12</h3>
+
+                        <p>Total Complaints</p>
+
+                        <div class="line"></div>
+
+                    </div>
+
+
+                    <div class="card orange">
+
+                        <div class="card-icon">
+                            🕐
+                        </div>
+
+                        <h3>3</h3>
+
+                        <p>Pending</p>
+
+                        <div class="line"></div>
+
+                    </div>
+
+
+                    <div class="card blue">
+
+                        <div class="card-icon">
+                            ⚙
+                        </div>
+
+                        <h3>4</h3>
+
+                        <p>In Progress</p>
+
+                        <div class="line"></div>
+
+                    </div>
+
+
+                    <div class="card green">
+
+                        <div class="card-icon">
+                            ✓
+                        </div>
+
+                        <h3>12</h3>
+
+                        <p>Resolved</p>
+
+                        <div class="line"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RECENT COMPLAINTS ================= -->
+
+                <section class="complaint-section" id="complaints">
+
+                    <div class="section-heading">
+
+                        <h2>Recent Complaints</h2>
+
+                        <a href="#allComplaints">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>#101</td>
+
+                                    <td>Broken Fan in Room 201</td>
+
+                                    <td>⚡ Electrical</td>
+
+                                    <td>📍 Block A, Room 201</td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                    <td>22 Aug 2026</td>
+
+                                    <td>⋮</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#102</td>
+
+                                    <td>Wi-Fi Not Working</td>
+
+                                    <td>〰 Internet</td>
+
+                                    <td>📍 Library</td>
+
+                                    <td>
+                                        <span class="status progress">
+                                            In Progress
+                                        </span>
+                                    </td>
+
+                                    <td>17 Aug 2026</td>
+
+                                    <td>⋮</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#103</td>
+
+                                    <td>Water Leakage in Washroom</td>
+
+                                    <td>💧 Plumbing</td>
+
+                                    <td>📍 Hostel Block B</td>
+
+                                    <td>
+                                        <span class="status resolved">
+                                            Resolved
+                                        </span>
+                                    </td>
+
+                                    <td>30 Apr 2026</td>
+
+                                    <td>⋮</td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#104</td>
+
+                                    <td>Classroom Light Not Working</td>
+
+                                    <td>💡 Electrical</td>
+
+                                    <td>📍 Block C, Room 105</td>
+
+                                    <td>
+                                        <span class="status pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                    <td>10 Feb 2026</td>
+
+                                    <td>⋮</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <a href="#allComplaints" class="view-all-btn">
+                        View All Complaints →
+                    </a>
+
+                </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

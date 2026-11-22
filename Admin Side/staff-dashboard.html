@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixIt - Staff Dashboard</title>
+
+    <link rel="stylesheet" href="staff-dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+
+        <div class="logo-area">
+
+            <img src="LOGO.png" alt="FixIt Logo">
+
+            <h1>
+                Fix<span>It</span>
+            </h1>
+
+        </div>
+
+
+        <!-- Menu -->
+
+        <nav class="side-menu">
+
+            <a href="staff-dashboard.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>DashBoard</span>
+            </a>
+
+            <a href="staff-notifications.html">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span>All Complaints</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-regular fa-clipboard"></i>
+                <span>My Tasks</span>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>Reports</span>
+            </a>
+
+            <a href="Home.html" class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Log Out</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main-area">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div></div>
+
+            <div class="topbar-right">
+
+                <!-- Notification -->
+
+                <div class="notification">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- Staff Profile -->
+
+                <div class="staff-profile">
+
+                    <div class="staff-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div class="staff-name">
+
+                        <h2>Dr. Prasad</h2>
+
+                        <p>Staff</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <main class="content">
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="statistics">
+
+
+                <!-- Total -->
+
+                <div class="stat-card total">
+
+                    <div class="stat-icon">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+
+                    <div class="stat-number">
+                        34
+                    </div>
+
+                    <h2>Total</h2>
+
+                </div>
+
+
+                <!-- Pending -->
+
+                <div class="stat-card pending">
+
+                    <div class="stat-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <div class="stat-number">
+                        7
+                    </div>
+
+                    <h2>Pending</h2>
+
+                </div>
+
+
+                <!-- Process -->
+
+                <div class="stat-card process">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <div class="stat-number">
+                        13
+                    </div>
+
+                    <h2>Process</h2>
+
+                </div>
+
+
+                <!-- Resolved -->
+
+                <div class="stat-card resolved">
+
+                    <div class="stat-icon">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+
+                    <div class="stat-number">
+                        14
+                    </div>
+
+                    <h2>Resolved</h2>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= COMPLAINTS ================= -->
+
+            <section class="complaints-section">
+
+                <h1>
+                    All Complaints :
+                </h1>
+
+
+                <div class="complaints-box">
+
+                    <!-- Complaint data will come here -->
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+*{
+    font-family:verdana;
+    margin:0px;
+    
+}
+body{
+    
+}
+.nav{
+    height:150px;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    box-shadow:0 0 35px white;
+    /* position:sticky;
+    top:0; */
+    /* z-index:1; */
+}
+.it{
+    color:green;
+}
+.a{
+   font-size:55px;
+}
+p{
+    font-family:arial;
+    font-weight:bold;
+    font-size:13px;
+
+}
+.Name{
+    text-align:center;
+}
+.butt{
+    width:300px;
+    display:flex;
+    gap:25px;
+    position:absolute;
+    right:10px; 
+    
+}
+button{
+    height:40px;
+    width:130px;
+    border:2px solid rgb(1, 73, 132);
+    border-radius:30px;
+    background-color:transparent;
+    color:rgb(1, 73, 132);
+    /* font-size:15px; */
+    font-weight:bold;
+    transition:0.2s;
+}
+.r{
+    background-color:blue;
+    color:white;
+    border:none;
+}
+.r:hover,button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 10px rgb(1,73,132);
+    cursor:pointer;
+}
+    .main{
+        background-color:rgba(176, 224, 230, 0.292);
+        height:450px;
+      
+        
+    }
+    .tt{
+        color:blue;   
+    }
+   
+     .bet {
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    width: 550px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+    .bet1{
+      background-image:url("https://www.collegebatch.com/static/clg-gallery/marwadi-university-rajkot-325314.webp");
+      background-size:contain;
+      background-repeat:no-repeat;
+      height:350px;
+      width:525px;
+      border-radius:20px;
+      position:absolute;
+      right:40px;
+      top:180px;
+      opacity:0.8;
+    }
+
+    footer{
+        background-color:rgb(123, 0, 255);
+        height:150px;
+        color:white;
+        font-family:arial;
+        text-align:center
+    }
+    .bbtt{
+        width:180px;
+        color:white;
+        border:3px solid white;
+    }
+    h5{
+        margin:2px;
+    }

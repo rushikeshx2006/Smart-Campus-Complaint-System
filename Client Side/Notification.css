@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 130px;
+    width: 100%;
+
+    background-color: #402494;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px 0 5px;
+}
+
+
+/* ================= LOGO ================= */
+
+.logoArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.fixit {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fix {
+    color: white;
+}
+
+.it {
+    color: #8bc34a;
+}
+
+
+/* ================= RIGHT HEADER ================= */
+
+.rightHeader {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* ================= NOTIFICATION ================= */
+
+.bell {
+    position: relative;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.dot {
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    background-color: red;
+    border-radius: 50%;
+
+    top: 2px;
+    right: 0;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+    width: 400px;
+    height: 90px;
+
+    border: 2px solid #a9d8ff;
+    border-radius: 35px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 20px;
+
+    color: white;
+}
+
+.userIcon {
+    width: 60px;
+    height: 60px;
+
+    background-color: #805ce0;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+
+    margin-right: 15px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 36px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.userRole {
+    font-size: 26px;
+    text-align: center;
+}
+
+
+/* ================= NOTIFICATION TITLE ================= */
+
+.notificationHead {
+    width: 80%;
+    margin: 18px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificationHead h1 {
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.notificationHead a {
+    color: black;
+    font-size: 25px;
+}
+
+
+/* ================= EMPTY AREA ================= */
+
+.emptyNotification {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 25px;
+}
+
+
+/* ================= NO NOTIFICATION ICON ================= */
+
+.noIcon {
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CIRCLE */
+
+.circle {
+    width: 250px;
+    height: 250px;
+
+    border: 52px solid #7651c4;
+
+    border-radius: 50%;
+}
+
+
+/* SLASH */
+
+.slash {
+    position: absolute;
+
+    width: 55px;
+    height: 350px;
+
+    background-color: #9873d3;
+
+    border-radius: 10px;
+
+    transform: rotate(40deg);
+}
+
+
+/* ================= MESSAGE ================= */
+
+.emptyNotification h2 {
+    margin-top: 5px;
+
+    font-size: 72px;
+    font-weight: bold;
+
+    color: black;
+}

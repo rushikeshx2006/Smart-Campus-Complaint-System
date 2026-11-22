@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Complaint Details | FixIt</title>
+
+    <link rel="stylesheet" href="complaint-details.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <img src="LOGO.png" alt="FixIt Logo">
+
+            <div class="logo-text">
+                <h1>Fix<span>It</span></h1>
+                <p>Smart Campus</p>
+                <p>Complaint System</p>
+            </div>
+        </div>
+
+        <nav class="side-nav">
+
+            <a href="Home1.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="complaint-details.html" class="active">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <span>My Complaints</span>
+            </a>
+
+            <a href="NewComplaint.html">
+                <i class="fa-regular fa-square-plus"></i>
+                <span>New Complaint</span>
+            </a>
+
+            <a href="Notification.html">
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+                <span class="badge">3</span>
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="Home.html " class="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Area -->
+
+    <div class="main-area">
+
+        <!-- Top Navbar -->
+
+        <header class="topbar">
+
+            <div class="topbar-space"></div>
+
+            <div class="topbar-right">
+
+                <div class="notification-icon">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="profile">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="profile-text">
+                        <h4>Rushi Chaudhari</h4>
+                        <p>Student</p>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Page Content -->
+
+        <main class="content">
+
+            <a href="Home1.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to My Complaints
+            </a>
+
+
+            <!-- Complaint Details Card -->
+
+            <section class="details-card">
+
+                <div class="complaint-information">
+
+                    <div class="details-left">
+
+                        <div class="detail-row">
+                            <h3>Title :</h3>
+                            <p>Broken fan in Room:812</p>
+                        </div>
+
+                        <div class="detail-row">
+                            <h3>Category :</h3>
+
+                            <div>
+                                <span class="category">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    Electrical
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="detail-row">
+                            <h3>Location :</h3>
+                            <p>Block-C , Room-812</p>
+                        </div>
+
+                        <div class="detail-row">
+                            <h3>Submitted on :</h3>
+                            <p>22-Aug-2026, 10:30 AM</p>
+                        </div>
+
+                        <div class="detail-row description-row">
+                            <h3>Description :</h3>
+
+                            <p>
+                                Ceiling Fan is not working Properly ,<br>
+                                in room no.812
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Complaint Image -->
+
+                    <div class="complaint-image">
+
+                        <svg viewBox="0 0 420 300"
+                             xmlns="http://www.w3.org/2000/svg"
+                             role="img"
+                             aria-label="Sample uploaded image">
+
+                            <defs>
+                                <linearGradient id="sky"
+                                    x1="0" y1="0" x2="0" y2="1">
+
+                                    <stop offset="0%"
+                                        stop-color="#79b1ff"/>
+
+                                    <stop offset="100%"
+                                        stop-color="#b9dcff"/>
+
+                                </linearGradient>
+
+                                <linearGradient id="mountain"
+                                    x1="0" y1="0" x2="0" y2="1">
+
+                                    <stop offset="0%"
+                                        stop-color="#2183f5"/>
+
+                                    <stop offset="100%"
+                                        stop-color="#6bb1ff"/>
+
+                                </linearGradient>
+                            </defs>
+
+                            <rect width="420" height="300"
+                                  fill="url(#sky)"/>
+
+                            <circle cx="210" cy="68" r="28"
+                                    fill="white"/>
+
+                            <path d="M0 250 L112 135
+                                     Q124 122 138 137
+                                     L212 210 L292 125
+                                     Q304 111 317 126
+                                     L420 235 L420 300 L0 300 Z"
+                                  fill="url(#mountain)"/>
+
+                        </svg>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Status Tracker -->
+
+                <section class="status-section">
+
+                    <h2>Status :</h2>
+
+                    <div class="status-tracker">
+
+                        <!-- Submitted -->
+
+                        <div class="status-step completed">
+
+                            <div class="status-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <h3>Submitted</h3>
+
+                            <p>
+                                22-Aug-2026<br>
+                                10:30 AM
+                            </p>
+
+                        </div>
+
+
+                        <!-- Assigned -->
+
+                        <div class="status-step completed">
+
+                            <div class="status-circle">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <h3>Assigned</h3>
+
+                            <p>
+                                23-Aug-2026<br>
+                                07:30 AM
+                            </p>
+
+                        </div>
+
+
+                        <!-- In Progress -->
+
+                        <div class="status-step in-progress">
+
+                            <div class="status-circle">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+
+                            <h3>In Progress</h3>
+
+                            <p>
+                                23-Aug-2026<br>
+                                10:40 AM
+                            </p>
+
+                        </div>
+
+
+                        <!-- Resolved -->
+
+                        <div class="status-step pending">
+
+                            <div class="status-circle">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <h3>Resolved</h3>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,819 @@
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7fb;
+    color: #202044;
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    width: 170px;
+    min-height: 100vh;
+
+    background: white;
+
+    border-right: 1px solid #eeeeee;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.logo-area {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.logo-circle {
+    width: 52px;
+    height: 52px;
+
+    border: 2px solid #3d20c8;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.logo-area h1 {
+    font-size: 23px;
+    color: #3d20c8;
+}
+
+
+.logo-area h1 span {
+    color: #3520d0;
+}
+
+
+.logo-area p {
+    font-size: 8px;
+    color: #555;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+    padding: 12px 10px;
+}
+
+
+.nav-link {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    margin-bottom: 5px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    color: #22224b;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.nav-link:hover {
+    background: #f0edff;
+    color: #4b28d4;
+}
+
+
+.nav-link.active {
+    background: #f0edff;
+    color: #4b28d4;
+    font-weight: bold;
+}
+
+
+.icon {
+    width: 27px;
+    font-size: 19px;
+}
+
+
+.notification-number {
+    margin-left: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #5425dc;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+}
+
+
+.logout {
+    color: #ed3333;
+    margin-top: 15px;
+}
+
+
+.logout:hover {
+    background: #fff0f0;
+    color: red;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.main {
+    width: calc(100% - 170px);
+
+    margin-left: 170px;
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+    height: 102px;
+
+    padding: 0 40px;
+
+    background: linear-gradient(
+        110deg,
+        #4523c9,
+        #251681
+    );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.menu-btn {
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+.welcome h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+
+.welcome p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   TOP ACTIONS
+========================================= */
+
+.top-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.new-btn {
+    height: 42px;
+
+    padding: 0 18px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.new-btn:hover {
+    background: white;
+    color: #3d20c8;
+}
+
+
+.bell {
+    position: relative;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 25px;
+}
+
+
+.bell span {
+    position: absolute;
+
+    top: -7px;
+    right: -8px;
+
+    width: 17px;
+    height: 17px;
+
+    background: #ff4545;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+
+.profile {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 25px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    padding: 25px;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.card {
+    min-height: 165px;
+
+    padding: 18px 22px;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    background: white;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+
+.card p {
+    font-size: 13px;
+}
+
+
+.card .line {
+    width: 42px;
+    height: 2px;
+
+    margin-top: 13px;
+}
+
+
+/* Purple */
+
+.purple {
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f7f3ff
+    );
+}
+
+
+.purple .card-icon {
+    background: #e7dcff;
+}
+
+
+.purple h3 {
+    color: #4d25d3;
+}
+
+
+.purple .line {
+    background: #7546ed;
+}
+
+
+/* Orange */
+
+.orange {
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #fffaf1
+    );
+}
+
+
+.orange .card-icon {
+    background: #ffe7ba;
+}
+
+
+.orange h3 {
+    color: #ee8700;
+}
+
+
+.orange .line {
+    background: #f28a00;
+}
+
+
+/* Blue */
+
+.blue {
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f1f7ff
+    );
+}
+
+
+.blue .card-icon {
+    background: #dceaff;
+}
+
+
+.blue h3 {
+    color: #145dd8;
+}
+
+
+.blue .line {
+    background: #1967df;
+}
+
+
+/* Green */
+
+.green {
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #f2fff5
+    );
+}
+
+
+.green .card-icon {
+    background: #d8f3df;
+}
+
+
+.green h3 {
+    color: #16953f;
+}
+
+
+.green .line {
+    background: #189842;
+}
+
+
+/* =========================================
+   COMPLAINT SECTION
+========================================= */
+
+.complaint-section {
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading h2 {
+    font-size: 16px;
+}
+
+
+.section-heading a {
+    text-decoration: none;
+
+    color: #4c21d3;
+
+    font-size: 12px;
+}
+
+
+.section-heading a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 11px;
+}
+
+
+thead {
+    background: #f8f7ff;
+}
+
+
+th {
+    padding: 12px;
+
+    text-align: left;
+
+    color: #252552;
+
+    font-weight: bold;
+}
+
+
+td {
+    padding: 13px 12px;
+
+    border-top: 1px solid #eeeeee;
+
+    white-space: nowrap;
+}
+
+
+tbody tr:hover {
+    background: #faf9ff;
+}
+
+
+/* Status */
+
+.status {
+    padding: 6px 12px;
+
+    border-radius: 6px;
+
+    display: inline-block;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.pending {
+    background: #fff0d4;
+    color: #d88600;
+}
+
+
+.progress {
+    background: #dfebff;
+    color: #1660d2;
+}
+
+
+.resolved {
+    background: #ddf4e2;
+    color: #168b3a;
+}
+
+
+/* =========================================
+   VIEW ALL BUTTON
+========================================= */
+
+.view-all-btn {
+    display: block;
+
+    width: 180px;
+
+    margin: 20px auto 0;
+
+    padding: 9px;
+
+    border: 1px solid #7546ed;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    color: #4c21d3;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+
+.view-all-btn:hover {
+    background: #4c21d3;
+
+    color: white;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .sidebar {
+        width: 70px;
+    }
+
+
+    .logo-area {
+        height: 80px;
+    }
+
+
+    .logo-area div:not(.logo-circle) {
+        display: none;
+    }
+
+
+    .nav-link {
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    .nav-link {
+        font-size: 0;
+    }
+
+
+    .nav-link .icon {
+        font-size: 20px;
+        width: auto;
+    }
+
+
+    .notification-number {
+        display: none;
+    }
+
+
+    .main {
+        width: calc(100% - 70px);
+
+        margin-left: 70px;
+    }
+
+
+    .topbar {
+        padding: 0 20px;
+    }
+
+
+    .welcome h2 {
+        font-size: 16px;
+    }
+
+
+    .welcome p {
+        display: none;
+    }
+
+
+    .new-btn {
+        font-size: 0;
+        padding: 10px;
+    }
+
+
+    .new-btn span {
+        font-size: 20px;
+    }
+
+
+    .top-actions {
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .content {
+        padding: 15px;
+    }
+
+
+    .topbar {
+        height: 85px;
+    }
+
+
+    .profile {
+        display: none;
+    }
+
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-group:nth-child(4) {
+        grid-column: auto;
+    }
+
+
+    .all-list div {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+}

@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fafafa;
+
+    color: #111;
+}
+
+
+
+/* ================= HEADER ================= */
+
+.navbar {
+
+    height: 118px;
+
+    background: linear-gradient(
+        100deg,
+        #4a21aa,
+        #3b2194
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+}
+
+
+
+/* ================= LOGO ================= */
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+}
+
+
+.logo-area img {
+
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+}
+
+
+.logo-area h1 {
+
+    color: white;
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+
+}
+
+
+.logo-area h1 span {
+
+    color: #54c84c;
+
+}
+
+
+
+/* ================= HEADER RIGHT ================= */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+
+/* ================= NOTIFICATION ================= */
+
+.notification {
+
+    position: relative;
+
+    color: #ffd000;
+
+    font-size: 43px;
+
+}
+
+
+.notification span {
+
+    position: absolute;
+
+    width: 13px;
+
+    height: 13px;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    top: -3px;
+
+    right: -2px;
+
+}
+
+
+
+/* ================= STAFF PROFILE ================= */
+
+.staff-profile {
+
+    width: 310px;
+
+    height: 82px;
+
+    border: 2px solid #c6b9ff;
+
+    border-radius: 45px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 8px 20px;
+
+}
+
+
+.staff-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background-color: #7653e4;
+
+    color: #a58aff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 36px;
+
+}
+
+
+.staff-profile h2 {
+
+    font-size: 36px;
+
+    line-height: 1;
+
+}
+
+
+.staff-profile p {
+
+    font-size: 25px;
+
+    margin-top: 3px;
+
+}
+
+
+
+/* ================= MAIN ================= */
+
+.main-container {
+
+    display: flex;
+
+    gap: 135px;
+
+    padding: 30px 58px;
+
+}
+
+
+
+/* ================= LEFT ================= */
+
+.left-section {
+
+    width: 230px;
+
+}
+
+
+
+/* ================= BIG PROFILE ================= */
+
+.big-profile {
+
+    width: 230px;
+
+    height: 260px;
+
+    border: 3px solid #111;
+
+    border-radius: 85px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: white;
+
+}
+
+
+.big-profile::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -5px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    background-color: #845bea;
+
+}
+
+
+.big-profile::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -48px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 215px;
+
+    height: 160px;
+
+    border-radius: 50% 50% 0 0;
+
+    background-color: #845bea;
+
+}
+
+
+
+/* ================= MENU ================= */
+
+.profile-menu {
+
+    width: 230px;
+
+    height: 242px;
+
+    border: 1px solid #777;
+
+    border-radius: 15px;
+
+    margin-top: 31px;
+
+    padding: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+.profile-menu button {
+
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    padding: 13px 5px;
+
+    cursor: pointer;
+
+}
+
+
+.profile-menu .active {
+
+    border: 1px solid #c5c9c8;
+
+    background-color: #f1f5f3;
+
+    border-radius: 30px;
+
+}
+
+
+
+/* ================= SETTINGS CARD ================= */
+
+.settings-card {
+
+    width: 668px;
+
+    height: 675px;
+
+    border: 1px solid #777;
+
+    border-radius: 40px;
+
+    position: relative;
+
+    background-color: white;
+
+}
+
+
+
+/* ================= HEADING ================= */
+
+.setting-heading {
+
+    position: absolute;
+
+    top: 17px;
+
+    right: 28px;
+
+    font-size: 25px;
+
+}
+
+
+
+/* ================= MODE BUTTONS ================= */
+
+.mode-buttons {
+
+    position: absolute;
+
+    top: 112px;
+
+    left: 133px;
+
+    display: flex;
+
+    gap: 78px;
+
+}
+
+
+.mode-buttons button {
+
+    width: 138px;
+
+    height: 70px;
+
+    border-radius: 11px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border: 2px solid #a329ff;
+
+}
+
+
+.dark-mode {
+
+    background-color: #48269e;
+
+    color: white;
+
+}
+
+
+.light-mode {
+
+    background-color: #bfe1ff;
+
+    color: #111;
+
+}
+
+
+
+/* ================= DEVICES ================= */
+
+.devices {
+
+    position: absolute;
+
+    top: 225px;
+
+    left: 310px;
+
+}
+
+
+.devices h2 {
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+
+}
+
+
+.devices ul {
+
+    padding-left: 20px;
+
+}
+
+
+.devices li {
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+/* ================= BOTTOM ================= */
+
+.bottom-section {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 60px;
+
+    right: 55px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+}
+
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 17px;
+
+    align-items: center;
+
+}
+
+
+.social-icons a {
+
+    text-decoration: none;
+
+    font-size: 48px;
+
+}
+
+
+.social-icons a:nth-child(1) {
+
+    color: #29a9e8;
+
+}
+
+
+.social-icons a:nth-child(2) {
+
+    color: #1fc568;
+
+}
+
+
+.social-icons a:nth-child(3) {
+
+    color: #4285f4;
+
+}
+
+
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.action-buttons button {
+
+    width: 277px;
+
+    height: 63px;
+
+    border-radius: 35px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ================= UPDATE ================= */
+
+.update-btn {
+
+    background-color: #4d50ef;
+
+    color: white;
+
+    border: 2px solid #222;
+
+}
+
+
+.update-btn:hover {
+
+    background-color: #383bdd;
+
+}
+
+
+
+/* ================= LOGOUT ================= */
+
+.logout-btn {
+
+    background-color: #ff1822;
+
+    color: black;
+
+    border: 2px solid #ffd000;
+
+}
+
+
+.logout-btn:hover {
+
+    background-color: #df1018;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .main-container {
+
+        gap: 50px;
+
+    }
+
+    .settings-card {
+
+        width: 650px;
+
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .main-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        height: 100px;
+
+    }
+
+    .logo-area h1 {
+
+        font-size: 35px;
+
+    }
+
+    .logo-area img {
+
+        width: 55px;
+
+        height: 55px;
+
+    }
+
+    .staff-profile {
+
+        width: 65px;
+
+        padding: 5px;
+
+        justify-content: center;
+
+    }
+
+    .staff-profile h2,
+
+    .staff-profile p {
+
+        display: none;
+
+    }
+
+    .settings-card {
+
+        width: 95%;
+
+        height: 700px;
+
+    }
+
+    .mode-buttons {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        gap: 15px;
+
+    }
+
+    .devices {
+
+        left: 40px;
+
+    }
+
+    .bottom-section {
+
+        left: 25px;
+
+        right: 25px;
+
+    }
+
+    .action-buttons button {
+
+        width: 200px;
+
+    }
+
+}

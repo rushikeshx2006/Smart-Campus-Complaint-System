@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f9ff;
+    color: #17203b;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 218px;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 12px rgba(50, 35, 100, 0.08);
+    z-index: 10;
+}
+
+.logo-area {
+    height: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+}
+
+.logo-area img {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+}
+
+.logo-text h1 {
+    font-size: 36px;
+    color: #4f20d5;
+    letter-spacing: -1px;
+}
+
+.logo-text h1 span {
+    color: #32b64b;
+}
+
+.logo-text p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #28304a;
+}
+
+
+/* SIDEBAR LINKS */
+
+.side-nav {
+    padding: 10px;
+}
+
+.side-nav a {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 0 17px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #25304c;
+    font-size: 14px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.side-nav a i {
+    font-size: 21px;
+    width: 22px;
+    text-align: center;
+}
+
+.side-nav a:hover {
+    background: #f3efff;
+    color: #5420df;
+}
+
+.side-nav a.active {
+    background: #f1edff;
+    color: #5721e6;
+    font-weight: bold;
+}
+
+.badge {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #5420df;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    font-size: 13px;
+}
+
+.side-nav a.logout {
+    color: #ff3047;
+    margin-top: 15px;
+}
+
+
+/* MAIN AREA */
+
+.main-area {
+    margin-left: 218px;
+    min-height: 100vh;
+}
+
+
+/* TOP NAVBAR */
+
+.topbar {
+    height: 113px;
+    background: linear-gradient(
+        110deg,
+        #5020ce,
+        #29177f
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.notification-icon {
+    position: relative;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.notification-icon span {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #ff3047;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* PROFILE */
+
+.profile {
+    min-width: 240px;
+    height: 67px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    gap: 13px;
+    color: white;
+}
+
+.profile-icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #f4edff;
+    color: #6a36dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.profile-text h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.profile-text p {
+    font-size: 13px;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 13px;
+}
+
+
+/* CONTENT */
+
+.content {
+    padding: 37px 30px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 20px 8px;
+    color: #5118e8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #3110a4;
+}
+
+
+/* DETAILS CARD */
+
+.details-card {
+    width: 100%;
+    background: white;
+    border: 1px solid #e9e7f7;
+    border-radius: 13px;
+    padding: 37px;
+    box-shadow: 0 5px 18px rgba(65, 40, 140, 0.09);
+}
+
+.complaint-information {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* COMPLAINT INFORMATION */
+
+.details-left {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    align-items: start;
+    gap: 13px;
+}
+
+.detail-row h3 {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.detail-row p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #252d44;
+}
+
+.description-row p {
+    line-height: 1.5;
+}
+
+
+/* CATEGORY */
+
+.category {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 15px;
+    border-radius: 8px;
+    background: #eee7ff;
+    color: #5c24ec;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.category i {
+    font-size: 19px;
+}
+
+
+/* IMAGE */
+
+.complaint-image {
+    width: 100%;
+    height: 295px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.complaint-image svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* STATUS SECTION */
+
+.status-section {
+    margin-top: 42px;
+}
+
+.status-section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.status-tracker {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.status-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+}
+
+
+/* CONNECTING LINES */
+
+.status-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% - 80px);
+    top: 39px;
+    left: calc(50% + 40px);
+    background: #d7d8e6;
+    z-index: 0;
+}
+
+.status-step.completed:not(:last-child)::after {
+    background: #20ad32;
+}
+
+.status-step.in-progress::after {
+    background: #d7d8e6;
+}
+
+
+/* STATUS CIRCLES */
+
+.status-circle {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    color: white;
+    z-index: 1;
+    margin-bottom: 17px;
+}
+
+.completed .status-circle {
+    background: #29b43c;
+}
+
+.in-progress .status-circle {
+    background: #ff8115;
+    font-size: 38px;
+}
+
+.pending .status-circle {
+    background: #f1f1f8;
+    border: 1px solid #d5d5e5;
+    color: #333846;
+}
+
+.status-step h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.status-step p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.completed p {
+    color: #22a834;
+}
+
+.in-progress p {
+    color: #ff7812;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1150px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .main-area {
+        margin-left: 190px;
+    }
+
+    .logo-area img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .logo-text h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        padding: 28px 20px;
+    }
+
+    .details-card {
+        padding: 25px;
+    }
+
+    .complaint-information {
+        grid-template-columns: 1fr;
+    }
+
+    .complaint-image {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 70px;
+    }
+
+    .logo-area {
+        height: 90px;
+        padding: 5px;
+    }
+
+    .logo-area img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-text,
+    .side-nav a span:not(.badge) {
+        display: none;
+    }
+
+    .side-nav {
+        padding: 7px;
+    }
+
+    .side-nav a {
+        justify-content: center;
+        padding: 0;
+        gap: 0;
+    }
+
+    .side-nav a i {
+        font-size: 20px;
+    }
+
+    .side-nav .badge {
+        position: absolute;
+        top: -5px;
+        right: -3px;
+        width: 19px;
+        height: 19px;
+        font-size: 11px;
+    }
+
+    .main-area {
+        margin-left: 70px;
+    }
+
+    .topbar {
+        height: 85px;
+        padding: 0 15px;
+    }
+
+    .topbar-right {
+        gap: 20px;
+    }
+
+    .profile {
+        min-width: auto;
+        padding: 7px;
+        gap: 8px;
+    }
+
+    .profile-text,
+    .arrow {
+        display: none;
+    }
+
+    .content {
+        padding: 22px 12px;
+    }
+
+    .details-card {
+        padding: 20px 14px;
+    }
+
+    .detail-row {
+        grid-template-columns: 115px 1fr;
+        gap: 8px;
+    }
+
+    .detail-row h3,
+    .detail-row p {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .complaint-image {
+        height: 210px;
+    }
+
+    .status-section h2 {
+        font-size: 23px;
+    }
+
+    .status-circle {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .in-progress .status-circle {
+        font-size: 24px;
+    }
+
+    .pending .status-circle {
+        font-size: 23px;
+    }
+
+    .status-step:not(:last-child)::after {
+        top: 23px;
+        left: calc(50% + 25px);
+        width: calc(100% - 50px);
+        height: 3px;
+    }
+
+    .status-step h3 {
+        font-size: 11px;
+    }
+
+    .status-step p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+}
